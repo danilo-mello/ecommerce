@@ -1,0 +1,36 @@
+{
+    "categories": [
+        {
+            "name": "Flower",
+            "image": "img.url"
+        },
+        {
+            "name": "Pre-Rolls",
+            "image": "img.url"
+        },
+        {
+            "name": "Vaporizers",
+            "image": "img.url"
+        },
+        {
+            "name": "Concentrates",
+            "image": "img.url"
+        },
+        {
+            "name": "Edibles",
+            "image": "img.url"
+        },
+        {
+            "name": "Topicals",
+            "image": "img.url"
+        },
+        {
+            "name": "Accessories",
+            "image": "img.url"
+        },
+        {
+            "name": "Apparel",
+            "image": "img.url"
+        }
+    ]
+}
