@@ -13,6 +13,8 @@ export const theme = {
     categoryCardBackground: '#ffffff',
     categoryCardColor: '#000000',
     productCardBackground: '#ffffff',
-    productCardColor: '#000000'
-
+    productCardColor: '#000000',
+    checkoutBtnBackground: '#3399FF',
+    checkoutBtnColor: '#ffffff',
+    removeItemColor: '#808080'
 }

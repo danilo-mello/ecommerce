@@ -14,6 +14,9 @@ import Home from './pages/home/Home'
 import VerifiedHome from './pages/verified-home/VerifiedHome'
 import DeniedHome from './pages/denied-home/DeniedHome'
 import ProductPage from './pages/product/ProductPage';
+import StoreListPage from './pages/store/StoreListPage';
+import Cart from './features/cart/Cart';
+
 
 function App() {
   return (
@@ -33,6 +36,14 @@ function App() {
 
           <Route path="/products">
             <ProductPage />
+          </Route>
+
+          <Route path="/cart">
+            <Cart />
+          </Route>
+
+          <Route path="/stores">
+            <StoreListPage />
           </Route>
 
         </Switch>
