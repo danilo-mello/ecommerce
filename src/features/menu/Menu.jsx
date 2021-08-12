@@ -6,16 +6,16 @@ const Menu = ({ open }) => {
     return (
         <StyledMenu aria-label="menu" open={open}>
             <a href="/">
-                menu mob
+                home
             </a>
-            <a href="#123">
-                123
+            <a href="/stores">
+                stores
             </a>
-            <a href="#456">
-                456
+            <a href="/products">
+                products
             </a>
-            <a href="#789">
-                789
+            <a href="/help">
+                help
             </a>
         </StyledMenu>
     )

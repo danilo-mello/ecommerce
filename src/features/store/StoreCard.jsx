@@ -10,23 +10,29 @@ const StoreCard = (props) => {
     return (
 
         <StyledStoreCard>
-            <div>
-                <div>
-                    <div>
+            <div className="store-card-info-container">
+
+                <div className="store-card-city-name-container">
+
+                    <div className="store-card-city">
                         {props.store.city}
                     </div>
-                    <div>
+
+                    <div className="store-card-name">
                         {props.store.name}
                     </div>
+
                 </div>
-                <div>
-                    Open
+
+                <div className="store-card-open-close-btn">
+                    OPEN
                 </div>
+
             </div>
-            <div>
+            <div className="store-card-address">
                 {props.store.address}
             </div>
-            <div>
+            <div className="store-card-bsns-hrs">
                 {props.store.businessHours}
             </div>
 

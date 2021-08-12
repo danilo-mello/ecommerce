@@ -2,10 +2,14 @@ import styled from 'styled-components'
 
 export const StyledVerifiedHome = styled.div`
 
-    background-color: '#000000';
+    background-color: ${({ theme }) => theme.categoryCardBackground};
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     .categories-container {
-        padding-top: 10vh;
+        margin-top: 150px;
     }
 
     h2 {
