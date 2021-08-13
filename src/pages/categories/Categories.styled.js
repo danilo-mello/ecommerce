@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const StyledVerifiedHome = styled.div`
+export const StyledCategories = styled.div`
 
     background-color: ${({ theme }) => theme.categoryCardBackground};
     display: flex;
@@ -9,11 +9,12 @@ export const StyledVerifiedHome = styled.div`
     flex-direction: column;
 
     .categories-container {
-        margin-top: 150px;
     }
 
     h2 {
-        margin-left: 10vw;
+        margin-left: 5vw;
+        font-size: 1.3em;
+        font-weight: 450;
     }
 
     .category-cards-container {
@@ -36,7 +37,7 @@ export const StyledVerifiedHome = styled.div`
         color: ${({ theme }) => theme.categoryCardColor};
         margin: 10px;
         border-radius: 10px;
-        box-shadow: 0 6px 6px -5px;
+        box-shadow: rgba(0,0,0,0.25) 0 5px 5px -1px;
     }
 
 

@@ -11,7 +11,7 @@ import { GlobalStyles } from './global'
 import { theme } from './app/theme'
 
 import Home from './pages/home/Home'
-import VerifiedHome from './pages/verified-home/VerifiedHome'
+import Categories from './pages/categories/Categories'
 import DeniedHome from './pages/denied-home/DeniedHome'
 import ProductPage from './pages/product/ProductPage';
 import StoreListPage from './pages/store/StoreListPage';
@@ -27,8 +27,8 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/verified-home">
-            <VerifiedHome />
+          <Route path="/categories">
+            <Categories />
           </Route>
           <Route path="/denied-home">
             <DeniedHome />

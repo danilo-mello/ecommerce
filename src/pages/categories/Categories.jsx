@@ -1,16 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-import Burger from '../../features/burger/Burger'
-import Menu from '../../features/menu/Menu'
-import Navbar from '../../features/navbar/Navbar'
 import Footer from '../../features/footer/Footer'
-import CartIcon from '../../features/cart/CartIcon'
+import StoreHeader from '../../features/store/StoreHeader'
 
-import { StyledVerifiedHome } from './VerifiedHome.styled'
+import { StyledCategories} from './Categories.styled'
 
-const VerifiedHome = () => {
+const Categories = () => {
 
-    const [open, setOpen] = useState(false)
     const data = [
         {
             "name": "Flower",
@@ -48,13 +44,9 @@ const VerifiedHome = () => {
 
     return (
 
-        <StyledVerifiedHome>
+        <StyledCategories>
 
-            <Burger open={open} setOpen={setOpen} />
-            <Menu open={open} setOpen={setOpen} />
-            <Navbar />
-
-            <CartIcon total={3} />
+            <StoreHeader />
 
             <div className="categories-container">
                 <h2>Categories</h2>
@@ -72,8 +64,8 @@ const VerifiedHome = () => {
 
             <Footer />
 
-        </StyledVerifiedHome>
+        </StyledCategories>
     )
 }
 
-export default VerifiedHome
+export default Categories

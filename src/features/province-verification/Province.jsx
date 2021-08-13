@@ -25,7 +25,7 @@ const Province = () => {
             history.push('/denied-home')
         } else {
             setSpanRegionClass("span-region-inactive")
-            history.push('/verified-home')
+            history.push('/stores')
 
         }
     }

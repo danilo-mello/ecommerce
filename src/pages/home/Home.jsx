@@ -1,13 +1,18 @@
 import React from 'react'
 
 import Province from '../../features/province-verification/Province'
+import Logo from '../../features/logo/Logo'
+
+import { StyledHome } from './Home.styled'
+
 
 const Home = () => {
 
     return (
-        <div>
+        <StyledHome>
+            <Logo />
             <Province />
-        </div>
+        </StyledHome>
     )
 }
 
