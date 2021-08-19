@@ -1,11 +1,13 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
+
 import Footer from '../../features/footer/Footer'
 import StoreHeader from '../../features/store/StoreHeader'
 
 import { StyledCategories} from './Categories.styled'
 
-const Categories = () => {
+const Categories = (props) => {
 
     const data = [
         {
@@ -49,7 +51,27 @@ const Categories = () => {
             <StoreHeader />
 
             <div className="categories-container">
+                <div className="categories-title">
                 <h2>Categories</h2>
+                </div>
+
+                <div className="category-cards-container">
+                    {data && data.map(categorie =>
+                        <Link className="category-card" to={{pathname:`/stores/categories/${categorie.name}`,}}>
+                            <div className="category-card-name">{categorie.name}</div>
+                            <div className="category-card-img-container"><img src={categorie.img} alt={categorie.name} /></div>
+                        </Link>
+
+                    )}
+                </div>
+
+            </div>
+
+            <div className="categories-container">
+                <div className="categories-title">
+                <h2>Promotions</h2>
+                </div>
+
                 <div className="category-cards-container">
                     {data && data.map(categorie =>
                         <div className="category-card">
@@ -62,7 +84,22 @@ const Categories = () => {
 
             </div>
 
-            <Footer />
+            <div className="categories-container">
+                <div className="categories-title">
+                <h2>Popular</h2>
+                </div>
+
+                <div className="category-cards-container">
+                    {data && data.map(categorie =>
+                        <div className="category-card">
+                            <div className="category-card-name">{categorie.name}</div>
+                            <div className="category-card-img-container"><img src={categorie.img} alt={categorie.name} /></div>
+                        </div>
+
+                    )}
+                </div>
+
+            </div>
 
         </StyledCategories>
     )

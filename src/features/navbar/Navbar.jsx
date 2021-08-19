@@ -8,14 +8,14 @@ const Navbar = () => {
             <a href="/">
                 menu desk
             </a>
-            <a href="#123">
-                123
+            <a href="/stores">
+                stores
             </a>
-            <a href="#456">
-                456
+            <a href="/products">
+                products
             </a>
-            <a href="#789">
-                789
+            <a href="/help">
+                help
             </a>
         </StyledNav>
     )

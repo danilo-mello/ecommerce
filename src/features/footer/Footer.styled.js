@@ -54,4 +54,38 @@ export const StyledFooter = styled.div`
         align-self: flex-start;
         padding-bottom: 25px;
     }
+
+    @media only screen and (min-width: ${({ theme }) => theme.mobile}) {
+
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .footer-copyright {
+            align-self: center;
+            padding-bottom: 25px;
+        }
+
+        .footer-link-col {
+            width: 15vw;
+            align-self: flex-start;
+
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
 `

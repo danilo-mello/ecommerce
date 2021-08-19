@@ -56,14 +56,15 @@ export const StyledProducCard = styled.div`
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        width: 100vw;
+        width: 90vw;
         height: 110px;
-        padding: 0 5vw 0 5vw;
+        padding: 0 5vw 0 0;
+        border-bottom: 1px solid #DCDCDC;
 
     }
 
     .product-size-card {
-        background: #DCDCDC;
+        background: #ededed;
         height: 70px;
         width: 90px;
         border-radius: 10px;
@@ -103,6 +104,7 @@ export const StyledProducCard = styled.div`
         color: #989898;
         font-size: 1.25rem;
         font-weight: 350;
+        z-index: 1;
     }
 
     hr {
@@ -111,6 +113,44 @@ export const StyledProducCard = styled.div`
         color: #DCDCDC;
         background-color: #DCDCDC;
         border-width:0
+    }
+
+    @media only screen and (min-width: ${({ theme }) => theme.mobile}) {
+
+        width: 90vw;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #DCDCDC;
+
+        .product-card {
+            display: flex;
+            width: 40vw;
+            flex-direction: row-reverse;
+
+        }
+
+        .product-card-info {
+            padding-left: 120px;
+        }
+
+        .product-sizes-container {
+            width: 30vw;
+            padding-bottom: 25px;
+            border-bottom: 0;
+        }
+
+        .product-img-container {
+            padding-top: 20px;
+            img{
+                width: 120px;
+                height: 120px;
+            }
+
+        }
+
+
+
     }
 
 `

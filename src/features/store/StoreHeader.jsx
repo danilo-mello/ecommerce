@@ -8,6 +8,7 @@ import StoreSearchBar from './StoreSearchBar'
 
 const StoreHeader = (props) => {
 
+
     return (
 
         <StyledStoreHeader>
@@ -24,7 +25,7 @@ const StoreHeader = (props) => {
 
             </div>
 
-            <div className="store-header-bar">
+            <div className="store-header-bar-mobile">
 
                 <StoreMenu />
 
@@ -32,6 +33,20 @@ const StoreHeader = (props) => {
 
                 <CartIcon total={3} />
             
+            </div>
+
+            <div className="store-header-bar-desktop">
+
+                <div className="store-header-bar-desktop-items">
+
+                    <StoreMenu />
+
+                    <StoreSearchBar />
+
+                    <CartIcon total={3} />
+
+                </div>
+
             </div>
 
         </StyledStoreHeader>

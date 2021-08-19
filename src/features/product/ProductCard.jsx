@@ -31,7 +31,6 @@ const ProductCard = (props) => {
                     ))
                 }
             </div>
-            <hr />
 
         </StyledProducCard>
     )

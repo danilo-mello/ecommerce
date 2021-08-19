@@ -72,8 +72,6 @@ const ProductList = () => {
     return (
 
         <StyledProducList>
-            <div>All {data[0].category}</div>
-            <hr />
             <div>
                 {
                     data[0].products.map((product, i) => (

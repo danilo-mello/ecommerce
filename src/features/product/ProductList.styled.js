@@ -4,12 +4,13 @@ export const StyledProducList = styled.div`
 
     background: #ffffff;
 
-    hr {
-        height: 1px;
+    @media only screen and (min-width: ${({ theme }) => theme.mobile}) {
+
         width: 90vw;
-        color: #DCDCDC;
-        background-color: #DCDCDC;
-        border-width:0
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
 
 `

@@ -15,7 +15,7 @@ import Categories from './pages/categories/Categories'
 import DeniedHome from './pages/denied-home/DeniedHome'
 import ProductPage from './pages/product/ProductPage';
 import StoreListPage from './pages/store/StoreListPage';
-import Cart from './features/cart/Cart';
+import CartPage from './pages/cart/CartPage';
 
 
 function App() {
@@ -27,19 +27,19 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/categories">
+          <Route path="/stores/:storename/categories/">
             <Categories />
           </Route>
           <Route path="/denied-home">
             <DeniedHome />
           </Route>
 
-          <Route path="/products">
+          <Route path="/stores/categories/:categorie">
             <ProductPage />
           </Route>
 
           <Route path="/cart">
-            <Cart />
+            <CartPage />
           </Route>
 
           <Route path="/stores">

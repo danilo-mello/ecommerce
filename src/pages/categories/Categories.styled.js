@@ -8,13 +8,16 @@ export const StyledCategories = styled.div`
     align-items: center;
     flex-direction: column;
 
-    .categories-container {
-    }
+
 
     h2 {
         margin-left: 5vw;
         font-size: 1.3em;
         font-weight: 450;
+    }
+
+    .categories-container {
+        width: 90vw;
     }
 
     .category-cards-container {
@@ -59,4 +62,66 @@ export const StyledCategories = styled.div`
 
     }
 
+    @media only screen and (min-width: ${({ theme }) => theme.mobile}) {
+
+        background-color: ${({ theme }) => theme.textColorDark};
+
+
+        .category-cards-container {
+            width: 65vw;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .categories-container {
+            background-color: ${({ theme }) => theme.categoryCardBackground};
+            width: 90vw;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .category-card {
+
+            width: 200px;
+            height: 180px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: rgba(0,0,0,0.25) 0 5px 5px -1px;
+        }
+
+        .category-card-name {
+            width: 200px;
+            height: 50px;
+            text-align: left;
+            padding-left: 25px;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+
+        .category-card-img-container {
+            img {
+                height: 85px;
+                width: auto;
+            }
+
+        }
+
+        .categories-title {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 65vw;
+            h2 {
+                padding: 40px 0 20px 20px;
+                margin: 0;
+                font-size: 1.8em;
+                font-weight: 450;
+            }
+        }
+
+    }
 `;

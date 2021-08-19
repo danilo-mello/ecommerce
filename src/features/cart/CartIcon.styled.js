@@ -31,4 +31,9 @@ export const StyledCartIcon = styled.div`
 
     }
 
+    @media only screen and (min-width: ${({ theme }) => theme.mobile}) {
+        width: 15vw;
+        padding-left: 50px;
+    }
+
 `

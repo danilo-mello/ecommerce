@@ -31,7 +31,7 @@ export const StyledStoreHeader = styled.div`
         top: 5%;
     }
 
-    .store-header-bar {
+    .store-header-bar-mobile {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -39,8 +39,61 @@ export const StyledStoreHeader = styled.div`
         width: 100vw;
         height: 70px;
         padding: 0 5vw;
-        border-bottom: 1px solid ${({ theme }) => theme.textColorStoreHeader};
+        border-bottom: 1px solid #DCDCDC;
         background-color: #E3F7F4;
+    }
+
+    .store-header-bar-desktop {
+        display: none;
+    }
+
+    @media only screen and (min-width: ${({ theme }) => theme.mobile}) {
+
+        width: 90vw;
+        margin-top: 80px;
+
+        .store-header-bar-mobile {
+            display: none;
+        }
+
+        .store-header-bar-desktop {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90vw;
+            height: 70px;
+            padding: 0 5vw;
+            background-color: #E3F7F4;
+
+        }
+
+        .store-header-bar-desktop-items {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: row;
+            width: 65vw;
+            height: 70px;
+            padding: 0 5vw;
+
+        }
+
+
+        .store-header-title-btn-container {
+            width: 90vw;
+        }
+
+        .store-header-close-btn {
+            font-size: 2em;
+            position: absolute;
+            left: 90%;
+            top: 100px;
+        }
+
+        .store-header-bar-items {
+            width: 65vw;
+            display: flex;
+        }
     }
     
 `

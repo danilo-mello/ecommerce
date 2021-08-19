@@ -11,5 +11,9 @@ export const StyledStoreSearchBar = styled.div`
         font-size: 1.5em;
         color: ${({ theme }) => theme.textColorStoreHeader};
     }
-    
+
+    @media only screen and (min-width: ${({ theme }) => theme.mobile}) {
+        width: 15vw;
+
+    }
 `

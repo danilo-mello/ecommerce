@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const StyledProvince = styled.div`
 
-    margin-top: 20vh;
+    margin-top: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +18,6 @@ export const StyledProvince = styled.div`
     select {
         height: 8vh;
         width: 85vw;
-        // color: ${({ theme }) => theme.textColorLightGrey};
         padding-left: 3.5vw;
         font-size: 1rem;
         margin-top: 2.5vh;
@@ -67,11 +66,52 @@ export const StyledProvince = styled.div`
     }
 
     h2 {
-        align-self: fkex-start;
+        align-self: flex-start;
     }
     .checkbox-age {
         margin-top: 2.5vh;
         margin-bottom: 2.5vh;
     }
+    
+    @media only screen and (min-width: ${({ theme }) => theme.mobile}) {
 
+        width: 50vw;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;  
+
+        form {
+            display: flex;
+            justify-content: flex-start;
+            aligm-items: flex-start;
+        }
+
+        select {
+            height: 50px;
+            width: 28vw;
+            padding-left: 20px;
+            font-size: 1.1rem;
+            margin-top: 2.5vh;
+            margin-bottom: 2.5vh;
+        }
+
+        .submit-btn {
+            height: 50px;
+            width: 28vw;
+        }
+
+        h2 {
+            font-size: 3em;
+            font-weight: 400;
+            margin-top: 0;
+        }
+
+        .label-region {
+            font-size: 1.2em;
+        }
+
+        label {
+            font-size: 1.1em;
+        }
+    }
 `;

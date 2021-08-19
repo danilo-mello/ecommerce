@@ -1,8 +1,10 @@
 import React from 'react'
 
-import { StyledCart } from './Cart.styled'
+import { StyledCartPage } from './CartPage.styled'
 
-const Cart = () => {
+import CartHeader from '../../features/cart/CartHeader'
+
+const CartPage = () => {
 
     const CartItems =
         [
@@ -64,10 +66,15 @@ const Cart = () => {
 
 
     return(
-        <StyledCart>
+
+        <StyledCartPage>
+
+            <CartHeader />
+
+            
 
             <div className="cart-header">
-                <div >
+                <div className="cart-page-header-title">
                     Shopping Cart
                 </div>
                 <div className="cart-close-button">
@@ -75,13 +82,14 @@ const Cart = () => {
                 </div>
             </div>
         
-            <div className="cart-checkout-button">
-                PROCEED TO CHECKOUT - total
+            <div className="cart-checkout-button-container">
+                <div className="cart-checkout-button">
+                    PROCEED TO CHECKOUT - total
+                </div>
             </div>
 
-            <hr />
 
-            <div>
+            <div className="cart-items-container">
 
                 {
                     CartItems.map((item) => (
@@ -135,8 +143,8 @@ const Cart = () => {
 
             </div>
 
-        </StyledCart>
+        </StyledCartPage>
     )
 }
 
-export default Cart
+export default CartPage
