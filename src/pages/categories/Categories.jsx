@@ -2,7 +2,6 @@ import React from 'react'
 
 import { Link } from 'react-router-dom'
 
-import Footer from '../../features/footer/Footer'
 import StoreHeader from '../../features/store/StoreHeader'
 
 import { StyledCategories} from './Categories.styled'
