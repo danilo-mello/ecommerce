@@ -21,8 +21,8 @@ const StoreMenu = () => {
                 <div className="store-desktop-menu">
 
                     <a href={'/'}> Home </a>
-                    <a href={'/stores'}> Stores </a>
-                    <a href={'/stores'}> Menu </a>
+                    <a href={'/'}> Stores </a>
+                    <a href={'/'}> Menu </a>
 
                 </div>
 

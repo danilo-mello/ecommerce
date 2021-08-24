@@ -8,13 +8,13 @@ const Menu = ({ open }) => {
             <a href="/">
                 home
             </a>
-            <a href="/stores">
+            <a href="/">
                 stores
             </a>
-            <a href="/products">
+            <a href="/">
                 products
             </a>
-            <a href="/help">
+            <a href="/">
                 help
             </a>
         </StyledMenu>

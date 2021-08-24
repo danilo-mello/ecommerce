@@ -6,15 +6,15 @@ const Navbar = () => {
     return (
         <StyledNav aria-label="navbar">
             <a href="/">
-                menu desk
+                menu 
             </a>
-            <a href="/stores">
+            <a href="/">
                 stores
             </a>
-            <a href="/products">
+            <a href="/">
                 products
             </a>
-            <a href="/help">
+            <a href="/">
                 help
             </a>
         </StyledNav>
