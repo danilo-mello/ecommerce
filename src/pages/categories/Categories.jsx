@@ -1,53 +1,20 @@
 import React from 'react'
 
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 import StoreHeader from '../../features/store/StoreHeader'
-
+import data from '../../app/data.json'
 import { StyledCategories} from './Categories.styled'
 
 const Categories = (props) => {
 
-    const data = [
-        {
-            "name": "Flower",
-            "img": "https://images.dutchie.com/category-stock-photos/flower/flower-1.png?auto=format&ixlib=react-9.0.2&w=1678"
-        },
-        {
-            "name": "Pre-Rolls",
-            "img": "https://images.dutchie.com/category-stock-photos/pre-rolls/pre-rolls-1.png?auto=format&ixlib=react-9.0.2&w=1678"
-        },
-        {
-            "name": "Vaporizers",
-            "img": "https://images.dutchie.com/category-stock-photos/vaporizers/vaporizers-1.png?auto=format&ixlib=react-9.0.2&w=1678"
-        },
-        {
-            "name": "Concentrates",
-            "img": "https://images.dutchie.com/category-stock-photos/concentrates/concentrates-1.png?auto=format&ixlib=react-9.0.2&w=1678"
-        },
-        {
-            "name": "Edibles",
-            "img": "https://images.dutchie.com/category-stock-photos/edibles/edibles-1.png?auto=format&ixlib=react-9.0.2&w=1678"
-        },
-        {
-            "name": "Topicals",
-            "img": "https://images.dutchie.com/category-stock-photos/topicals/topicals-1.png?auto=format&ixlib=react-9.0.2&w=1678"
-        },
-        {
-            "name": "Accessories",
-            "img": "https://images.dutchie.com/category-stock-photos/accessories/accessories.png?auto=format&ixlib=react-9.0.2&w=1678"
-        },
-        {
-            "name": "Apparel",
-            "img": "https://images.dutchie.com/category-stock-photos/apparel/apparel.png?auto=format&ixlib=react-9.0.2&w=1678"
-        }
-    ]
+    let params = useParams()
 
     return (
 
         <StyledCategories>
 
-            <StoreHeader />
+            <StoreHeader title={params.storename} />
 
             <div className="categories-container">
                 <div className="categories-title">
@@ -55,8 +22,8 @@ const Categories = (props) => {
                 </div>
 
                 <div className="category-cards-container">
-                    {data && data.map(categorie =>
-                        <Link className="category-card" to={{pathname:`/stores/categories/${categorie.name}`,}}>
+                    {data && data.categories.map((categorie, id) =>
+                        <Link key={id} className="category-card" params={{name: categorie.name}} to={{pathname:`/${params.storename}/${categorie.name}`,}}>
                             <div className="category-card-name">{categorie.name}</div>
                             <div className="category-card-img-container"><img src={categorie.img} alt={categorie.name} /></div>
                         </Link>
@@ -72,10 +39,11 @@ const Categories = (props) => {
                 </div>
 
                 <div className="category-cards-container">
-                    {data && data.map(categorie =>
-                        <div className="category-card">
-                            <div className="category-card-name">{categorie.name}</div>
-                            <div className="category-card-img-container"><img src={categorie.img} alt={categorie.name} /></div>
+                    {data && data.promotionProducts.map(product =>
+                        <div className="category-card-promotion-popular">
+                            <div className="category-card-name">{product.name}</div>
+                            <div className="category-card-img-container"><img src={product.img} alt={product.name} /></div>
+                            <div className="category-card-price">${product.price}</div>
                         </div>
 
                     )}
@@ -89,10 +57,11 @@ const Categories = (props) => {
                 </div>
 
                 <div className="category-cards-container">
-                    {data && data.map(categorie =>
-                        <div className="category-card">
-                            <div className="category-card-name">{categorie.name}</div>
-                            <div className="category-card-img-container"><img src={categorie.img} alt={categorie.name} /></div>
+                    {data && data.popularProducts.map(product =>
+                        <div className="category-card-promotion-popular">
+                            <div className="category-card-name">{product.name}</div>
+                            <div className="category-card-img-container"><img src={product.img} alt={product.name} /></div>
+                            <div className="category-card-price">${product.price}</div>
                         </div>
 
                     )}

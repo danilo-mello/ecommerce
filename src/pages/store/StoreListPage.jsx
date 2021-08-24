@@ -5,7 +5,7 @@ import Menu from '../../features/menu/Menu'
 import Navbar from '../../features/navbar/Navbar'
 import Logo from '../../features/logo/Logo'
 import Footer from '../../features/footer/Footer'
-import { stores } from '../../app/data'
+import data from '../../app/data.json'
 
 import StoreCard from '../../features/store/StoreCard'
 
@@ -24,7 +24,7 @@ const StoreListPage = (props) => {
     }
 
     useEffect(() => {
-        setCurrentStores(stores)
+        setCurrentStores(data.stores)
     }, [])
 
     const showProvince = () => {
@@ -50,10 +50,10 @@ const StoreListPage = (props) => {
 
         let filterStore = []
 
-        for (let i = 0; i < stores.length; i++) {
+        for (let i = 0; i < data.stores.length; i++) {
 
-            if (stores[i].province === province) {
-                filterStore.push(stores[i])
+            if (data.stores[i].province === province) {
+                filterStore.push(data.stores[i])
             }
         }
         citySelectorByProvince(province)
@@ -64,9 +64,9 @@ const StoreListPage = (props) => {
 
         let filterStore = []
 
-        for (let i = 0; i < stores.length; i++) {
-            if (stores[i].city === city) {
-                filterStore.push(stores[i])
+        for (let i = 0; i < data.stores.length; i++) {
+            if (data.stores[i].city === city) {
+                filterStore.push(data.stores[i])
             }
         }
 
@@ -77,9 +77,9 @@ const StoreListPage = (props) => {
 
         let cities = []
 
-        for (let i = 0; i < stores.length; i++) {
-            if (stores[i].province === province) {
-                cities.push(stores[i].city)
+        for (let i = 0; i < data.stores.length; i++) {
+            if (data.stores[i].province === province) {
+                cities.push(data.stores[i].city)
             }
         }
 
@@ -122,9 +122,9 @@ const StoreListPage = (props) => {
                                 <option value="" disabled>City</option>
 
                             {
-                                selectedCities && selectedCities.map((city) => {
+                                selectedCities && selectedCities.map((city, id) => {
                                         return (
-                                            <option value={city}>{city}</option>
+                                            <option key={id} value={city}>{city}</option>
                                         )
                                 })
         

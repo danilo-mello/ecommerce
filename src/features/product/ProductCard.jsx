@@ -13,7 +13,7 @@ const ProductCard = (props) => {
                 <div className="product-card-info">
                     <div className="product-name"> {props.data.name} </div>
                     <div className="product-manufacturer"> {props.data.manufacturer} </div>
-                    <div className="product-info"> {props.data.type} THC {props.data.thc} | CBD {props.data.cdb} </div>
+                    <div className="product-info"> {props.data.type} {props.data.thc && 'TCH'} {props.data.thc} {props.data.cdb && ' | CDB'} {props.data.cdb} </div>
                 </div>
                 <div className="product-img-container">
                     <img src={props.data.img} alt={props.data.name} />

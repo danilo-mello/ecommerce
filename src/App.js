@@ -26,15 +26,15 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home />
-          </Route>
-          <Route path="/stores/:storename/categories/">
+          </Route>6
+          <Route path="/:storename/categories/">
             <Categories />
           </Route>
           <Route path="/denied-home">
             <DeniedHome />
           </Route>
 
-          <Route path="/stores/categories/:categorie">
+          <Route path="/:storename/:categorie">
             <ProductPage />
           </Route>
 

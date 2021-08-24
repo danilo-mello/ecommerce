@@ -21,6 +21,10 @@ export const StyledCartIcon = styled.div`
         padding: 0 10px;
     }
 
+    .cart-icon-container:hover {
+        cursor: pointer;
+    }
+
     .cart-icon-svg {
         font
         height: 20px;

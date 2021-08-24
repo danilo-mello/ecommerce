@@ -24,6 +24,12 @@ export const StyledStoreCard = styled.div`
         width: 150px;
         font-size: 1.1em;
         font-weight: 400;
+
+        text-decoration: none;
+
+        &:focus, &:hover, &:visited, &:link, &:active {
+            text-decoration: none;
+        }
     }
 
     .store-card-info-container {
@@ -92,9 +98,7 @@ export const StyledStoreCard = styled.div`
             align-items: center;
             justify-content: flex-start;
             flex-direction: column;
-            a:link {
-                text-decoration: none;
-            }
+            
         }
 
         .store-card-bsns-hrs {

@@ -2,35 +2,491 @@
     "categories": [
         {
             "name": "Flower",
-            "image": "img.url"
+            "img": "https://images.dutchie.com/category-stock-photos/flower/flower-1.png?auto=format&ixlib=react-9.0.2&w=1678"
         },
         {
             "name": "Pre-Rolls",
-            "image": "img.url"
+            "img": "https://images.dutchie.com/category-stock-photos/pre-rolls/pre-rolls-1.png?auto=format&ixlib=react-9.0.2&w=1678"
         },
         {
             "name": "Vaporizers",
-            "image": "img.url"
+            "img": "https://images.dutchie.com/category-stock-photos/vaporizers/vaporizers-1.png?auto=format&ixlib=react-9.0.2&w=1678"
         },
         {
             "name": "Concentrates",
-            "image": "img.url"
+            "img": "https://images.dutchie.com/category-stock-photos/concentrates/concentrates-1.png?auto=format&ixlib=react-9.0.2&w=1678"
         },
         {
             "name": "Edibles",
-            "image": "img.url"
+            "img": "https://images.dutchie.com/category-stock-photos/edibles/edibles-1.png?auto=format&ixlib=react-9.0.2&w=1678"
         },
         {
             "name": "Topicals",
-            "image": "img.url"
+            "img": "https://images.dutchie.com/category-stock-photos/topicals/topicals-1.png?auto=format&ixlib=react-9.0.2&w=1678"
         },
         {
             "name": "Accessories",
-            "image": "img.url"
+            "img": "https://images.dutchie.com/category-stock-photos/accessories/accessories.png?auto=format&ixlib=react-9.0.2&w=1678"
         },
         {
             "name": "Apparel",
-            "image": "img.url"
+            "img": "https://images.dutchie.com/category-stock-photos/apparel/apparel.png?auto=format&ixlib=react-9.0.2&w=1678"
+        }
+    ],
+    "promotions": [
+        {
+            "name": "Topicals",
+            "img": "https://images.dutchie.com/category-stock-photos/topicals/topicals-1.png?auto=format&ixlib=react-9.0.2&w=1678"
+        },
+        {
+            "name": "Accessories",
+            "img": "https://images.dutchie.com/category-stock-photos/accessories/accessories.png?auto=format&ixlib=react-9.0.2&w=1678"
+        },
+        {
+            "name": "Apparel",
+            "img": "https://images.dutchie.com/category-stock-photos/apparel/apparel.png?auto=format&ixlib=react-9.0.2&w=1678"
+        }
+
+    ],
+    "popular": [
+        {
+            "name": "Topicals",
+            "img": "https://images.dutchie.com/category-stock-photos/topicals/topicals-1.png?auto=format&ixlib=react-9.0.2&w=1678"
+        },
+        {
+            "name": "Accessories",
+            "img": "https://images.dutchie.com/category-stock-photos/accessories/accessories.png?auto=format&ixlib=react-9.0.2&w=1678"
+        }
+    ],
+    "stores": [
+        {
+            "name": "Oakridge",
+            "city": "Vancouver",
+            "province": "British Columbia",
+            "address": "4487 Oakridge Street Vancouver, BC, V6P 4Z9",
+            "businessHours": "Open daily 9am to 11pm",
+            "img": "https://images.squarespace-cdn.com/content/v1/5a7e0673f09ca4ccc5a95102/1599198213860-PV52BMNSECDHOQGC53J5/200723_MUSE_460_Granville-0086_original.jpg?format=1500w"
+        },
+    
+        {
+            "name": "Olympic Village",
+            "city": "Vancouver",
+            "province": "British Columbia",
+            "address": "7653 Olympic Village Vancouver, BC, V5V 3P9",
+            "businessHours": "Open daily 9am to 11pm",
+            "img": "https://nectar.store/wp-content/uploads/2019/03/BetterByDesign.jpg"
+        },
+    
+        {
+            "name": "King Edward",
+            "city": "Vancouver",
+            "province": "British Columbia",
+            "address": "5532 King Edward Vancouver, BC, V5V 3P9",
+            "businessHours": "Open daily 9am to 11pm",
+            "img": "https://media.blogto.com/articles/20200903-TheNeighbourhoodJoint1.jpg?w=2048&cmd=resize_then_crop&height=1365&quality=70"
+        },
+    
+                {
+            "name": "WB 7 Street",
+            "city": "Calgary",
+            "province": "Alberta",
+            "address": "WB 7 Street Calgary, AB",
+            "businessHours": "Open daily 9am to 11pm",
+            "img": "https://nectar.store/wp-content/uploads/2019/03/BetterByDesign.jpg"
+        },
+    
+        {
+            "name": "Southgate LRT",
+            "city": "Edmonton",
+            "province": "Alberta",
+            "address": "Southgate LRT Station, 111 Street Edmonton, AB",
+            "businessHours": "Open daily 9am to 11pm",
+            "img": "https://media.blogto.com/articles/20200903-TheNeighbourhoodJoint1.jpg?w=2048&cmd=resize_then_crop&height=1365&quality=70"
+        },
+    
+                {
+            "name": "St. Patrick",
+            "city": "Toronto",
+            "province": "Ontario",
+            "address": "449 University Avenue Toronto, ON",
+            "businessHours": "Open daily 9am to 11pm",
+            "img": "https://nectar.store/wp-content/uploads/2019/03/BetterByDesign.jpg"
+        },
+    
+        {
+            "name": "Midland",
+            "city": "Toronto",
+            "province": "Ontario",
+            "address": "4123 Midland Avenue Toronto, ON",
+            "businessHours": "Open daily 9am to 11pm",
+            "img": "https://media.blogto.com/articles/20200903-TheNeighbourhoodJoint1.jpg?w=2048&cmd=resize_then_crop&height=1365&quality=70"
+        }
+    ],
+    "products":
+    [
+        {
+            "category": "Flower",
+            "name": "Wappa",
+            "manufacturer": "Redecan",
+            "type": "Hybrid",
+            "thc": "18% - 26%",
+            "cdb": "1%",
+            "img": "https://images.dutchie.com/85e1e75469ceb43d13b5cd52d425a605?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=100&w=100&q=75&dpr=1",
+            "sizes": [
+                {
+                    "weight": "3.5g",
+                    "price": "29.02"
+                },
+                {
+                    "weight": "7g",
+                    "price": "55.81"
+                },
+                {
+                    "weight": "15g",
+                    "price": "108.71"
+                }
+            ]
+        },
+        {
+            "category": "Flower",
+            "name": "Cold Creek Kush",
+            "manufacturer": "Redecan",
+            "type": "Hybrid",
+            "thc": "15% - 23%",
+            "cdb": "1%",
+            "img": "https://images.dutchie.com/25ad1cbd2a7639f8e2e6b36f2e428327?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=100&w=100&q=75&dpr=1",
+            "sizes": [
+                {
+                    "weight": "3.5g",
+                    "price": "29.91"
+                },
+                {
+                    "weight": "7g",
+                    "price": "58.04"
+                }
+            ]
+        },
+        {
+            "category": "Flower",
+            "name": "BC Sungrow Serratus",
+            "manufacturer": "Tatalus Labs",
+            "type": "Hybrid",
+            "thc": "13% - 21%",
+            "cdb": "1%",
+            "img": "https://images.dutchie.com/6b31c989c61cbdf0c44b0b18e5a000b7?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=100&w=100&q=75&dpr=1",
+            "sizes": [
+                {
+                    "weight": "3.5g",
+                    "price": "47.55"
+                }
+            ]
+        },
+        {
+            "category": "Pre-Rolls",
+            "name": "Color Cannabis - Mango Haze Pre-Rolls - 10x0.35g",
+            "manufacturer": "COLOR CANNABIS",
+            "type": "Sativa",
+            "thc": "4% - 8%",
+            "cdb": "7% - 12%",
+            "img": "https://images.dutchie.com/11a5a05fbc766e3e2672e4216799cbf3?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=100&w=100&q=75&dpr=1",
+            "sizes": [
+                {
+                    "weight": "3.5g",
+                    "price": "20.76"
+                }
+            ]
+        },
+        {
+            "category": "Pre-Rolls",
+            "name": "Ace Valley CBD Pre Roll - 3x0.5g",
+            "manufacturer": "Ace Valley",
+            "type": "Hybrid",
+            "thc": "3% - 7%",
+            "cdb": "6% - 12%",
+            "img": "https://images.dutchie.com/8b9606db78991b080a5dd996f5dc410b?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=100&w=100&q=75&dpr=1",
+            "sizes": [
+                {
+                    "weight": "1.5g",
+                    "price": "16.97"
+                }
+            ]
+        },
+        {
+            "category": "Pre-Rolls",
+            "name": "Green Seal Mango Kush Pre Roll - 3x0.5g",
+            "manufacturer": "Green Seal",
+            "type": "Hybrid",
+            "thc": "20% - 27%",
+            "cdb": "1%",
+            "img": "https://images.dutchie.com/bae578f18e837c4a44b08cbfd466cc3b?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=100&w=100&q=75&dpr=1",
+            "sizes": [
+                {
+                    "weight": "1.5g",
+                    "price": "20.47"
+                }
+            ]
+        },
+        {
+            "category": "Vaporizers",
+            "name": "Gellati Cartridge 0.95g",
+            "manufacturer": "General Admission",
+            "type": "Hybrid",
+            "thc": "75% - 93%",
+            "cdb": "25%",
+            "img": "https://images.dutchie.com/172c466d5a15f191114c580197cab230?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=100&w=100&q=75&dpr=1",
+            "sizes": [
+                {
+                    "weight": "0.95g",
+                    "price": "20.47"
+                }
+            ]
+        },
+        {
+            "category": "Vaporizers",
+            "name": "Northbound Connect Cart",
+            "manufacturer": "Northbound",
+            "thc": "66% - 90%",
+            "cdb": "5%",
+            "img": "https://images.dutchie.com/b39a7890aa38a455eeccd95a5857bfa2?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=100&w=100&q=75&dpr=1",
+            "sizes": [
+                {
+                    "price": "54.21"
+                }
+            ]
+        },
+        {
+            "category": "Vaporizers",
+            "name": "Sundial 2x1CDB 510 Cart - 1x0.5g",
+            "manufacturer": "Sundial",
+            "type": "Hybrid",
+            "thc": "3.3% - 7.3%",
+            "cdb": "20%",
+            "img": "https://images.dutchie.com/4b680ddcbca5b130b679c4678f3f23ca?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=100&w=100&q=75&dpr=1",
+            "sizes": [
+                {
+                    "weight": "0.5g",
+                    "price": "20.47"
+                }
+            ]
+        },
+        {
+            "category": "Concentrates",
+            "name": "Hiway Hash 2g",
+            "manufacturer": "Blissco",
+            "type": "Indica",
+            "thc": "300% - 400%",
+            "cdb": "2%",
+            "img": "https://images.dutchie.com/3b22ffb75f211cd6a3d0ef43751b19c6?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=100&w=100&q=75&dpr=1",
+            "sizes": [
+                {
+                    "weight": "2g",
+                    "price": "37.00"
+                }
+            ]
+        },
+        {
+            "category": "Concentrates",
+            "name": "Indica Shatter 0.5g",
+            "manufacturer": "Blendcraft",
+            "type": "Indica",
+            "thc": "60% - 92.5%",
+            "cdb": "15%",
+            "img": "https://images.dutchie.com/6c1fa7782e9056e4d4c52740a477dd3c?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=100&w=100&q=75&dpr=1",
+            "sizes": [
+                {
+                    "weight": "0.5g",
+                    "price": "33.04"
+                }
+            ]
+        },
+        {
+            "category": "Concentrates",
+            "name": "Black Cherry Punch Hash Rosin",
+            "manufacturer": "Qwest",
+            "type": "Indica",
+            "thc": "60% - 80%",
+            "cdb": "10%",
+            "img": "https://images.dutchie.com/4b55862a7ac9281bfe674e1334331bda?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=100&w=100&q=75&dpr=1",
+            "sizes": [
+                {
+                    "weight": "0.5g",
+                    "price": "55.54"
+                }
+            ]
+        },
+        {
+            "category": "Edibles",
+            "name": "Salted Caramel Square 5mg",
+            "manufacturer": "GoWeed",
+            "thc": "10%",
+            "img": "https://images.dutchie.com/6ca329cd41211a93d2b76ab95c0ea0d9?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=100&w=100&q=75&dpr=1",
+            "sizes": [
+                {
+                    "price": "6.99"
+                }
+            ]
+        },
+        {
+            "category": "Edibles",
+            "name": "Black Cherry Gummy 5x20mg",
+            "manufacturer": "Qwest",
+            "thc": "20%",
+            "img": "https://images.dutchie.com/560a40eba873779d24169a865f9212fc?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=100&w=100&q=75&dpr=1",
+            "sizes": [
+                {
+                    "price": "8.59"
+                }
+            ]
+        },
+        {
+            "category": "Edibles",
+            "name": "Orange Gummy 1x1 5x10mg",
+            "manufacturer": "Daba",
+            "thc": "10%",
+            "cdb": "10%",
+            "img": "https://images.dutchie.com/df14de2bbfd1ecf783568d9af220d98e?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=100&w=100&q=75&dpr=1",
+            "sizes": [
+                {
+                    "price": "9.99"
+                }
+            ]
+        },
+        {
+            "category": "Accessories",
+            "name": "Wireless Vaporizor Toqui 520",
+            "manufacturer": "Toqui",
+            "img": "https://images.dutchie.com/b04ba0a50e521818bca0be6e7be39c88?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=100&w=100&q=75&dpr=1",
+            "sizes": [
+                {
+                    "price": "88.99"
+                }
+            ]
+        },
+        {
+            "category": "Accessories",
+            "name": "Classic Papers 1.25'",
+            "manufacturer": "Raw",
+            "img": "https://images.dutchie.com/da17a2f9361cbe0a0af8c959f42d1378?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=100&w=100&q=75&dpr=1",
+            "sizes": [
+                {
+                    "price": "1.59"
+                }
+            ]
+        },
+        {
+            "category": "Accessories",
+            "name": "Classic Papers King Size",
+            "manufacturer": "Raw",
+            "img": "https://images.dutchie.com/19dc79f928120285e330e1ae0ba62d52?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=100&w=100&q=75&dpr=1",
+            "sizes": [
+                {
+                    "price": "1.99"
+                }
+            ]
+        },
+        {
+            "category": "Topicals",
+            "name": "CBD Bath Bomb",
+            "thc": "50%",
+            "cdb": "50%",
+            "manufacturer": "Stewart Farms",
+            "img": "https://images.dutchie.com/52a466ed01bc54344bd4ec45867ff6e7?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=100&w=100&q=75&dpr=1",
+            "sizes": [
+                {
+                    "price": "13.84"
+                }
+            ]
+        },
+        {
+            "category": "Topicals",
+            "name": "CBD Transdermal Cream",
+            "manufacturer": "Relief",
+            "img": "https://images.dutchie.com/989a273c29bc53b153f01b8c07def9d4?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=100&w=100&q=75&dpr=1",
+            "thc": "10%",
+            "cdb": "250%",
+            "sizes": [
+                {
+                    "price": "42.41"
+                }
+            ]
+        },
+        {
+            "category": "Topicals",
+            "name": "1:1 CBD Transdermal Cream",
+            "thc": "150%",
+            "cdb": "150%",
+            "manufacturer": "Relief",
+            "img": "https://images.dutchie.com/e15f00a98222155e1c6c55e70812489a?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=100&w=100&q=75&dpr=1",
+            "sizes": [
+                {
+                    "price": "66.66"
+                }
+            ]
+        }
+    ],
+    "promotionProducts": [
+        {
+            "category": "Flower",
+            "name": "Wappa",
+            "manufacturer": "Redecan",
+            "type": "Hybrid",
+            "thc": "18% - 26%",
+            "cdb": "1%",
+            "img": "https://images.dutchie.com/85e1e75469ceb43d13b5cd52d425a605?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=100&w=100&q=75&dpr=1",
+            "price": "29.02"
+        },
+        {
+            "category": "Pre-Rolls",
+            "name": "Ace Valley CBD Pre Roll - 3x0.5g",
+            "manufacturer": "Ace Valley",
+            "type": "Hybrid",
+            "thc": "3% - 7%",
+            "cdb": "6% - 12%",
+            "img": "https://images.dutchie.com/8b9606db78991b080a5dd996f5dc410b?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=100&w=100&q=75&dpr=1",
+            "price": "16.97"
+        },
+        {
+            "category": "Concentrates",
+            "name": "Indica Shatter 0.5g",
+            "manufacturer": "Blendcraft",
+            "type": "Indica",
+            "thc": "60% - 92.5%",
+            "cdb": "15%",
+            "img": "https://images.dutchie.com/6c1fa7782e9056e4d4c52740a477dd3c?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=100&w=100&q=75&dpr=1",
+            "price": "33.04"
+        }
+
+    ],
+    "popularProducts": [
+        {
+            "category": "Topicals",
+            "name": "1:1 CBD Transdermal Cream",
+            "thc": "150%",
+            "cdb": "150%",
+            "manufacturer": "Relief",
+            "img": "https://images.dutchie.com/e15f00a98222155e1c6c55e70812489a?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=100&w=100&q=75&dpr=1",
+            "price": "66.66"
+        },
+        {
+            "category": "Concentrates",
+            "name": "Hiway Hash 2g",
+            "manufacturer": "Blissco",
+            "type": "Indica",
+            "thc": "300% - 400%",
+            "cdb": "2%",
+            "img": "https://images.dutchie.com/3b22ffb75f211cd6a3d0ef43751b19c6?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=100&w=100&q=75&dpr=1",
+            "price": "37.00"
+        },
+        {
+            "category": "Flower",
+            "name": "BC Sungrow Serratus",
+            "manufacturer": "Tatalus Labs",
+            "type": "Hybrid",
+            "thc": "13% - 21%",
+            "cdb": "1%",
+            "img": "https://images.dutchie.com/6b31c989c61cbdf0c44b0b18e5a000b7?auto=format&fit=fill&fill=solid&fillColor=%23fff&__typename=ImgixSettings&ixlib=react-9.0.2&h=100&w=100&q=75&dpr=1",
+            "price": "47.55"
         }
     ]
+
 }

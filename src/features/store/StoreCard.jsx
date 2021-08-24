@@ -53,11 +53,11 @@ const StoreCard = (props) => {
 
                 <div className="store-card-btn-container">
 
-                    <Link  className="store-card-btn" to={{pathname:`/stores/${props.store.name}/categories/`,}}>
+                    <Link  className="store-card-btn" to={{pathname:`/${props.store.name}/categories`,}}>
                         Pick-up
                     </Link>
 
-                    <Link  className="store-card-btn" to={{pathname:`/stores/${props.store.name}/categories/`,}}>
+                    <Link  className="store-card-btn" to={{pathname:`/${props.store.name}/categories`,}}>
                         Delivery
                     </Link>
 

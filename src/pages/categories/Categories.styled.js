@@ -8,8 +8,6 @@ export const StyledCategories = styled.div`
     align-items: center;
     flex-direction: column;
 
-
-
     h2 {
         margin-left: 5vw;
         font-size: 1.3em;
@@ -41,6 +39,32 @@ export const StyledCategories = styled.div`
         margin: 10px;
         border-radius: 10px;
         box-shadow: rgba(0,0,0,0.25) 0 5px 5px -1px;
+
+        text-decoration: none;
+
+        &:focus, &:hover, &:visited, &:link, &:active {
+            text-decoration: none;
+        }
+    }
+
+    .category-card-promotion-popular {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 160px;
+        height: 200px;
+        background-color: ${({ theme }) => theme.categoryCardBackground};
+        color: ${({ theme }) => theme.categoryCardColor};
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: rgba(0,0,0,0.25) 0 5px 5px -1px;
+
+        text-decoration: none;
+
+        &:focus, &:hover, &:visited, &:link, &:active {
+            text-decoration: none;
+        }
     }
 
 
@@ -91,6 +115,22 @@ export const StyledCategories = styled.div`
             margin: 15px;
             border-radius: 10px;
             box-shadow: rgba(0,0,0,0.25) 0 5px 5px -1px;
+        
+        }
+
+        .category-card-promotion-popular {
+
+            width: 200px;
+            height: 220px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: rgba(0,0,0,0.25) 0 5px 5px -1px;
+        
+        }
+
+        .category-card-price {
+            font-size: 1.1rem;
+            font-weight: 400;
         }
 
         .category-card-name {

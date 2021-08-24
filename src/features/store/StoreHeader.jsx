@@ -6,7 +6,11 @@ import CartIcon from '../../features/cart/CartIcon'
 import StoreMenu from './StoreMenu'
 import StoreSearchBar from './StoreSearchBar'
 
+import { useHistory } from 'react-router-dom'
+
 const StoreHeader = (props) => {
+
+    const history = useHistory();
 
 
     return (
@@ -16,12 +20,12 @@ const StoreHeader = (props) => {
             <div className="store-header-title-btn-container">
 
                 <h3 className="store-header-title">
-                    {props.title ? props.title : "Airport Menu "}
+                    {props.title ? props.title : "Store Name"}
                 </h3>
 
-                <a href="/stores" className="store-header-close-btn">
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#000" stroke-width="2" d="M3,3 L21,21 M3,21 L21,3"></path></svg>
-                </a>
+                <div onClick={() => history.goBack()} className="store-header-close-btn">
+                    <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#000" strokeWidth="2" d="M3,3 L21,21 M3,21 L21,3"></path></svg>
+                </div>
 
             </div>
 
